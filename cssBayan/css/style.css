@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border-style: solid;
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    border-style: dashed;
+}
