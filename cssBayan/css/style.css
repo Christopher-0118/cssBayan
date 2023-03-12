@@ -3,12 +3,12 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-
+    padding: 5% 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: antiquewhite;
-    border-style: solid;
+    /* border-style: solid; */
 }
 /* @media only screen and (min-width: 320px) { /* For mobile: 320x568
     .wrapper{
@@ -32,7 +32,7 @@
 
 .main {
     width:100%;
-
+    /* background-color: blueviolet; */
 }
 
 .title {
@@ -44,7 +44,39 @@
 }
 
 .accordion {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    border-style: dashed;
+    align-items: center;
+    border-top: solid gray;
 }
+
+.memes {
+    padding: 1% 4%;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.memes + input[type="radio"] {
+    display: none;
+}
+
+.content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+
+.memes + .button:checked + .content {
+    max-height: 30em;
+}
+
+.fa-solid{
+    transform: rotate(180deg);
+}
+
